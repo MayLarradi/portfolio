@@ -1,0 +1,42 @@
+{
+  "name": "my-latest-projects",
+  "version": "1.0.0",
+  "description": "Vite + React + TypeScript + Tailwind portfolio",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/styles/input.css -o ./src/styles/tailwind.css --minify",
+    "dev:css": "tailwindcss -i ./src/styles/input.css -o ./src/styles/tailwind.css --watch",
+    "build:server": "tsc -p tsconfig.server.json",
+    "dev:server": "node --import tsx src/server.ts",
+    "predev": "npm run build:css",
+    "dev": "concurrently \"npm run dev:css\" \"npm run dev:server\" \"vite\"",
+    "build": "npm run build:css && vite build && npm run build:server",
+    "preview": "vite preview",
+    "test": "echo \"No tests configured yet\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.2.4",
+    "@types/express": "^5.0.6",
+    "@types/node": "^22.12.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.5.0",
+    "concurrently": "^9.2.1",
+    "postcss": "^8.5.10",
+    "tailwindcss": "^4.2.2",
+    "tsx": "^4.7.0",
+    "typescript": "^6.0.3",
+    "vite": "^5.4.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^4.18.2",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "resend": "^6.12.3"
+  }
+}
