@@ -159,17 +159,18 @@ export default function App() {
 			<main className="mx-auto w-full max-w-6xl px-6 pb-20">
 				<section className="grid items-center gap-10 pb-16 pt-8 md:grid-cols-[1.05fr_0.95fr] md:pt-12">
 					<div className="reveal">
-						<p className="section-label">MASTER'S STUDENT IN SOFTWARE ENGINEERING</p>
+						<p className="section-label">🚀 SOFTWARE ENGINEER & DESIGNER</p>
 						<h1 className="font-display mt-4 text-5xl leading-tight md:text-7xl">
 							Mayssae Larradi
 						</h1>
 						<p className="muted-text mt-4 text-lg leading-relaxed">
-							First-year MSc student at NUAA in Nanjing, China, building reliable software and
-							thoughtful UX.
+							MSc Student in Software Engineering at NUAA. Building scalable systems,
+							intuitive interfaces, and AI-powered solutions.
 						</p>
 						<div className="mt-6 flex flex-wrap gap-3">
-							<span className="chip">NUAA · Nanjing</span>
-							<span className="chip">MSc Software Engineering</span>
+							<span className="chip">Full-Stack Dev</span>
+							<span className="chip">AI/ML Researcher</span>
+							<span className="chip">UX Designer</span>
 						</div>
 						<div className="mt-8 flex flex-wrap gap-4">
 							<a className="primary-btn" href="#projects">
@@ -218,38 +219,35 @@ export default function App() {
 					<div className="reveal reveal-delay-1">
 						<p className="section-label">ABOUT ME</p>
 						<h2 className="font-display section-title mt-3">
-							Curious, detail-oriented, and driven by impact
+							Crafting elegant solutions through code and design
 						</h2>
 						<p className="muted-text mt-5 leading-relaxed">
-							I'm a first-year MSc student at NUAA focused on software engineering and
-							human-centered design.
-						</p>
-						<p className="muted-text mt-4 leading-relaxed">
-							I'm exploring AI-enhanced products and scalable systems that feel clear and
-							intuitive.
+							I'm focused on building software that balances technical rigor with user-centered
+							design. My work spans full-stack development, machine learning research, and
+							creating intuitive digital experiences.
 						</p>
 						<div className="mt-8 grid gap-6 md:grid-cols-2">
 							<div>
-								<p className="text-xs uppercase tracking-[0.3em] text-stone-500">Based in</p>
+								<p className="text-xs uppercase tracking-[0.3em] text-stone-500">📍 Location</p>
 								<p className="mt-2 font-semibold">Nanjing, China</p>
 							</div>
 							<div>
-								<p className="text-xs uppercase tracking-[0.3em] text-stone-500">Education</p>
+								<p className="text-xs uppercase tracking-[0.3em] text-stone-500">🎓 Education</p>
 								<p className="mt-2 font-semibold">MSc Software Engineering · NUAA</p>
 							</div>
 							<div>
-								<p className="text-xs uppercase tracking-[0.3em] text-stone-500">Focus Areas</p>
-								<p className="mt-2 font-semibold">AI, UI/UX, Systems</p>
+								<p className="text-xs uppercase tracking-[0.3em] text-stone-500">🔧 Expertise</p>
+								<p className="mt-2 font-semibold">Web Dev · AI/ML · UI/UX Design</p>
 							</div>
 						</div>
 					</div>
 				</section>
 
 				<section id="projects" className="pb-16 reveal">
-					<p className="section-label">FEATURED WORK</p>
+					<p className="section-label">💡 FEATURED WORK</p>
 					<h2 className="font-display section-title mt-3">Selected Projects</h2>
 					<p className="muted-text mt-3 max-w-2xl">
-						Full-stack web development and AI research focused on user behavior prediction.
+						Full-stack solutions and AI research that solve real problems.
 					</p>
 					<div className="mt-10 grid gap-6 md:grid-cols-3">
 						<article className="soft-card p-5 reveal">
@@ -309,9 +307,9 @@ export default function App() {
 				</section>
 
 				<section id="skills" className="pb-16 text-center reveal">
-					<p className="section-label">EXPERTISE</p>
+					<p className="section-label">⚡ EXPERTISE</p>
 					<h2 className="font-display section-title mt-3">Skills &amp; Technologies</h2>
-					<p className="muted-text mt-4">A focused toolkit across web, systems, and AI.</p>
+					<p className="muted-text mt-4">Tools and platforms I use to build.</p>
 					<div className="mt-10 grid gap-8 text-left md:grid-cols-3">
 						<div className="reveal">
 							<div className="skill-heading">
@@ -358,9 +356,9 @@ export default function App() {
 				</section>
 
 				<section id="experience" className="pb-16 reveal">
-					<p className="section-label">BACKGROUND</p>
+					<p className="section-label">📚 BACKGROUND</p>
 					<h2 className="font-display section-title mt-3">Experience &amp; Education</h2>
-					<p className="muted-text mt-4 max-w-2xl">Education and work highlights.</p>
+					<p className="muted-text mt-4 max-w-2xl">Academic and professional highlights.</p>
 					<div className="mt-10 grid gap-6">
 						<div className="timeline">
 							<span className="timeline-dot" aria-hidden="true"></span>
@@ -497,10 +495,10 @@ export default function App() {
 				</section>
 
 				<section id="contact" className="pb-16 reveal">
-					<p className="section-label text-center">GET IN TOUCH</p>
+					<p className="section-label text-center">✉️ GET IN TOUCH</p>
 					<h2 className="font-display section-title mt-3 text-center">Let&apos;s Connect</h2>
 					<p className="muted-text mx-auto mt-3 max-w-2xl text-center">
-						Open to collaboration, internships, and research conversations.
+						Interested in collaboration, opportunities, or just want to chat?
 					</p>
 					<div className="mt-12 grid gap-10 md:grid-cols-[0.95fr_1.05fr]">
 						<div className="reveal">
