@@ -1,9 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap");
 @import "tailwindcss";
 
-@source "../../index.html";
-@source "../**/*.{ts,tsx,js,jsx,html}";
-
 :root {
 	--bg: #1d1917;
 	--bg-soft: #24201e;
@@ -113,7 +110,6 @@ html {
 	text-decoration: none;
 	box-shadow: 0 0 30px rgba(226, 185, 198, 0.4);
 	transition: transform 200ms ease, box-shadow 200ms ease, filter 200ms ease;
-	backdrop-filter: blur(8px);
 }
 
 .pill-btn:hover {
@@ -173,7 +169,6 @@ html {
 	text-decoration: none;
 	background: rgba(255, 255, 255, 0.06);
 	transition: border-color 200ms ease, transform 200ms ease, box-shadow 200ms ease;
-	backdrop-filter: blur(6px);
 }
 
 .secondary-btn:hover {
@@ -188,9 +183,24 @@ html {
 	border: 1px solid var(--border);
 	background: linear-gradient(140deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.03));
 	box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
-	-webkit-backdrop-filter: blur(10px);
-	backdrop-filter: blur(10px);
 	transition: transform 240ms ease, box-shadow 240ms ease, border-color 240ms ease;
+}
+
+@supports ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
+	.pill-btn {
+		-webkit-backdrop-filter: blur(8px);
+		backdrop-filter: blur(8px);
+	}
+
+	.secondary-btn {
+		-webkit-backdrop-filter: blur(6px);
+		backdrop-filter: blur(6px);
+	}
+
+	.glass-card {
+		-webkit-backdrop-filter: blur(10px);
+		backdrop-filter: blur(10px);
+	}
 }
 
 .soft-card {
